@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ja">
+<!--<![endif]-->
+<head>
+<title>JA1YAD | Works | MMF</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" utf-8"="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/style.css">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+</head>
+<body>
+<!--<div class="container">-->
+  <header id="navtop"> <a href="../index.html" class="logo fleft"> <img src="../img/logo.png" alt=""> </a>
+    <nav class="fright">
+      <ul>
+        <li><a href="../index.html" class="navinactive">ホーム</a></li>
+        <li><a href="../about.html" class="navinactive">YADについて</a></li>
+        <li><a href="../works.html" class="navactive">作品</a></li>
+        <li><a href="../contest.html" class="navinactive">コンテスト結果</a></li>
+        <li><a href="../fresher.html" class="navinactive">新入生向け</a></li>
+        <li><a href="../contact.html" class="navinactive">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="work-page main grid-wrap container">
+    <header class="grid col-full">
+    </header>
+    <aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
+      <h3>MikuMikuForce</h3>
+      <h6>About</h6>
+      <p class="mbottom">3D Real Time Strategy Shooting Game</p>
+      <h6>Developer</h6>
+      <p class="">Produce , Program , Animation : <br> B3, Dept. of Organic Material Engineering <a href="https://twitter.com/tacet10">@tacet10</a></p>
+      <p class="halfmbottom">Music , Program : <br> B3, <a href="https://twitter.com/_7iva">@_7iva</a></p>
+      <h6>Technology</h6>
+      <ul class="halfmbottom">
+        <li>Unity</li>
+        <li>C#</li>
+        <li>MikuMikuDance</li>
+        <li>mmd4mecanim</li>
+        <li>FL Studio</li>
+      </ul>
+      <h6>Links</h6>
+      <ul class="mbottom">
+        <li><a href="MMF_Web/MMF_Web.html">WebPlayer</a> - ベータ版(Web)</li>
+      </ul>
+    </aside>
+    <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+      <figure class=""><img src="../img/works/mmf.png" alt=""> </a>
+        <figcaption>
+          <p>Screen Shot</p>
+        </figcaption>
+	  <br>
+	  <h4>概要</h4>
+	  <p>3人称視点リアルタイムストラテジーシューティングゲーム(開発中)</p>
+	  <h4>説明</h4>
+	  <p>UnityとMMDを用いて、3Dモデルを用いたリアルタイムストラテジーのシューティングゲームを作りました。</p>
+	  <p>上のスクリーンショットには写っていないのですが、本当は味方がたくさんいます。そもそものコンセプトは、タイトルの通り、軍隊を操るゲームです。兵種や部隊ごとに"wait","help","attack","move"の命令を出し、敵の拠点を攻め落としたり、自分の拠点を防衛することが目的となります。</p>
+	  <p>攻め込んでくる敵との相性や、地形による影響を考えて、最適な指揮をしつつ、自分自身も敵を倒すゲームとなります。</p>
+	  <h4>技術的な説明</h4>
+	  <p>Unityというゲームエンジンを用いてゲームを作りました。プレイヤーは、今回はMMDモデルのTda式Appendミクを利用させていただいていますが、人型MMDモデルならば何でも対応させられます。ちなみに、モデル自体は既存のものですが、歩いたり走ったりするときのモーションはUnity内のAnimatorを用いて自分で作成しています。</p>
+	  <p>音楽も自分達で作っています(現在進行形)。</p>
+	  <p>スクリプトはC#によって書かれています。現在ステージ作成やゲームバランス、UI,GUI周りの調整を行っています。最終的にはWebPlayerを用いて、ブラウザでどこからでも遊べるように公開する予定です。<p>
+	  <h4>操作方法</h4>
+	  <h5>プレイヤー移動</h5>
+	  <p>w/s/a/d で 上/下/左/右  :  w/a/d 2度連続入力で 上/左/右 に ダッシュ</p>
+	  <h5>カメラ移動</h5>
+	  <p>マウスの動きにあって動きます</p>
+	  <h5>ショット</h5>
+	  <p>マウスクリック</p>
+	  <h5>味方指揮</h5>
+	  <p>ユニットの種類によって，数字が割り当てられています(現在は1,2の2種類)．右クリックの有無 + 数字 で味方を操作します．</p>
+	  <p>数字 のみ で help(自分の追従) と wait(待機)の切り替えを行います．</p>
+	  <p>敵の右クリック + 数字 で目標の敵へ近づき，攻撃を行います．</p>
+	  <p>場所の右クリック + 数字 でクリックされた場所に移動(その後待機)させます。</p>
+      </figure>
+    </section>
+  </div>
+  <!--main-->
+  <footer class="grid-wrap">
+    <div class="up grid col-one-third "> <a href="#navtop" title="Go back up">Go To Top &uarr;</a> </div>
+    <nav class="grid col-full ">
+      <ul>
+        <li><a href="../index.html">ホーム</a></li>
+        <li><a href="../about.html">YADについて</a></li>
+        <li><a href="../works.html">作品</a></li>
+        <li><a href="../contest.html">コンテスト結果</a></li>
+        <li><a href="../fresher.html">新入生向け</a></li>
+        <li><a href="../contact.html">アクセス・お問い合わせ</a></li>
+      </ul>
+    <a href="../index.html"> <img src="../img/logo_without_letters.png" alt="" class="fleft"> </a>
+
+    <script>
+      var today = new Date();
+      document.write('<p class="copyright">&copy; ' + today.getFullYear() + ' JA1YAD. All rights reserved.</p>')
+    </script>
+
+    </nav>
+  </footer>
+<!--</div>-->
+<!-- Javascript - jQuery -->
+<script src="../js/jquery-1.7.2.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]><script src="js/selectivizr.js"></script><![endif]-->
+<script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ja">
+<!--<![endif]-->
+<head>
+<title>JA1YAD | Works | WinVim</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/style.css">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+</head>
+<body>
+<!--<div class="container">-->
+  <header id="navtop"> <a href="../index.html" class="logo fleft"> <img src="../img/logo.png" alt=""> </a>
+    <nav class="fright">
+      <ul>
+        <li><a href="../index.html" class="navinactive">ホーム</a></li>
+        <li><a href="../about.html" class="navinactive">YADについて</a></li>
+        <li><a href="../works.html" class="navactive">作品</a></li>
+        <li><a href="../contest.html" class="navinactive">コンテスト結果</a></li>
+        <li><a href="../fresher.html" class="navinactive">新入生向け</a></li>
+        <li><a href="../contact.html" class="navinactive">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="work-page main grid-wrap container">
+    <header class="grid col-full">
+    </header>
+    <aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
+	  <h3>WinVim</h3>
+      <h6>About</h6>
+      <p class="mbottom">Mouse Emulator Application for Windows</p>
+      <h6>Developer</h6>
+      <p class="halfmbottom">B3, Dept. of Computer Science</p>
+      <h6>Technology</h6>
+      <ul class="halfmbottom">
+        <li>C++</li>
+        <li>Win32api</li>
+      </ul>
+      <h6>Links</h6>
+      <ul class="mbottom">
+        <li><a href="#">Download</a> - 工事中</li>
+      </ul>
+    </aside>
+    <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+      <figure class=""><img src="../img/works/winvim.png" alt=""> </a>
+        <figcaption>
+          <p>Screen Shot</p>
+        </figcaption>
+		<br>
+		<h4>概要</h4>
+		<p>WindowsのノートPCをマウスがなくても快適に使えるようなツールを作りました。</p>
+		<h4>説明</h4>
+		<p>Windowsを使うとき、普通マウスがなければタッチパッドとそのボタンを使って操作をすると思います。しかしカーソルを長距離動かしたり画面をスクロールしたりといったことがしづらくストレスがたまることがあるので、手をホームポジションに置いたままマウスの動きを実現できるようなプログラムを作りました。また、ウィンドウ切り替えを簡単に行う機能とテキストをVim風に編集できる機能も作りました。</p>
+		<h4>技術的な説明</h4>
+		<p>C++でWin32apiを用いて、WindowsなのになぜかVimとg++を使って開発を行いました。プログラム起動中はキーボードの入力をフックして各動作を行うので、ほかのソフトウェアに不要な文字の情報が送られることがありません。</p>
+		<p>しかし、コンパイラのバージョンによってはPDFを閲覧するとフックが無効になったりコマンドプロンプト使用中にフックが無効になったりするよくわからないバグが残りました。開発中はマウスカーソルが動かなくなったりキーボードが反応しなくなったりしてヒヤヒヤすることもありました。</p>
+		<h4>操作方法</h4>
+		<h5>&#12296; ノーマルモード &#12297;</h5>
+		<br>
+		<h6>マウスカーソルの移動</h6>
+		<ul>
+			<li>e/s/d/fで上/左/下/右</li>
+			<li>qでウィンドウの閉じるボタンにカーソル移動</li>
+			<li>x/cで画面の左/右側にカーソル移動</li>
+		</ul>
+		<h6>右/左クリック</h6>
+		<ul>
+			<li>j/l または q/e</li>
+		</ul>
+		<h6>マウスホイール操作</h6>
+		<ul>
+			<li>i/,/k で上/下/クリック　または　aを押しながらe/dで上/下</li>
+		</ul>
+		<h6>モード切り替え</h6>
+		<ul>
+			<li>g ウィンドウ切り替えモード</li>
+			<li>v テキスト編集モード</li>
+			<li>I プログラムの一時停止 (再開はShiftを押しながらEscape)</li>
+			<li>Control+Shift+何か　マクロモード</li>
+		<br>
+		<h5>&#12296; ウィンドウ切り替えモード &#12297; </h5>
+		<br>
+		<h6>カーソルの上下移動</h6>
+		<ul>
+			<li>k/j</li>
+		</ul>
+		<h6>決定</h6>
+		<ul>
+			<li>t</li>
+		</ul>
+		<h6>モード切り替え</h6>
+		<ul>
+			<li>Escape　ノーマルモード</li>
+		</ul>
+		<br>
+		<h5>&#12296; テキスト編集モード &#12297; </h5>
+		<br>
+		<h6>大体Vimと同じ</h6>
+		<h6>モード切り替え</h6>
+		<ul>
+			<li>Escape　ノーマルモード</li>
+		</ul>
+		<br>
+		<h5>&#12296; マクロモード &#12297; </h5>
+		</br>
+		<h6>マクロを保存する</h6>
+		<ul>
+			<li>各キー</li>
+		</ul>
+		<h6>終了</h6>
+		<ul>
+			<li>Control+Shift+q</li>
+		</ul>
+      </figure>
+    </section>
+  </div>
+  <!--main-->
+  <footer class="grid-wrap">
+    <div class="up grid col-one-third "> <a href="#navtop" title="Go back up">Go To Top &uarr;</a> </div>
+    <nav class="grid col-full ">
+      <ul>
+        <li><a href="../index.html">ホーム</a></li>
+        <li><a href="../about.html">YADについて</a></li>
+        <li><a href="../works.html">作品</a></li>
+        <li><a href="../contest.html">コンテスト結果</a></li>
+        <li><a href="../fresher.html">新入生向け</a></li>
+        <li><a href="../contact.html">アクセス・お問い合わせ</a></li>
+      </ul>
+    <a href="../index.html"> <img src="../img/logo_without_letters.png" alt="" class="fleft"> </a>
+
+    <script>
+      var today = new Date();
+      document.write('<p class="copyright">&copy; ' + today.getFullYear() + ' JA1YAD. All rights reserved.</p>')
+    </script>
+
+    </nav>
+  </footer>
+<!--</div>-->
+<!-- Javascript - jQuery -->
+<script src="../js/jquery-1.7.2.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]><script src="js/selectivizr.js"></script><![endif]-->
+<script src="../js/scripts.js"></script>
+</body>
+</html>

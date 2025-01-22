@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- OGP -->
+	<meta name="og:url" content="https://musenken.net/open192/">
+	<meta name="og:title" content="Open192 - 無線研の部室の開室状況を確認">
+	<meta name="og:image" content="https://musenken.net/open192/open192.png">
+	<meta name="og:description" content="Open192では、無線研究部の部室の電気がついているかどうかを確認できます。">
+	<meta name="og:type" content="article">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<title>Open 192</title>
+	<style>
+		@keyframes slidein {
+			from {
+				left: 100%;
+			}
+
+			to {
+				left: -20%;
+			}
+		}
+		body {
+		    /*background: linear-gradient(-45deg, #c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);*/
+		    background-color: khaki;
+		    background-repeat: no-repeat;
+		    height: 100vh;
+		    color: black;
+		    font-family: serif;
+		    font-weight: bolder;
+		}
+		h1 {
+			font-family: sans-serif;
+			font-size: 64px;
+			position: relative;
+			width: auto;
+			height: 1em;
+		}
+		span#title {
+			font-style: italic;
+			letter-spacing: -0.15em;
+			text-shadow: 5px 5px gray;
+		}
+		span#container {
+			/*animation: 3s steps(12, end) 1s infinite running slidein;*/
+			position: absolute;
+		}
+		span#arrows {
+			font-weight: bold;
+			position: relative;
+			animation: .7s linear 0s infinite running arrow;
+			color: green;
+		}
+		@keyframes arrow {
+			from {
+				top: -1em;
+			}
+			to {
+				top: 2em;
+			}
+		}
+		a:hover {
+			font-style: italic
+		  }
+	</style>
+</head>
+<body>
+	<h1>
+	<span id="container">
+		<span id="title">
+		<span style="color: #c70000; margin: 0px">O</span>
+		<span style="color: #d28300; margin: 0px">p</span>
+		<span style="color: #dfd000; margin: 0px">e</span>
+		<span style="color: #00873c; margin: 0px">n</span>
+		<span style="color: #c70000; margin: 0px"> </span>
+		<span style="color: #005aa0; margin: 0px">1</span>
+		<span style="color: #181878; margin: 0px">9</span>
+		<span style="color: #800073; margin: 0px">2</span>
+		</span>
+	</span>
+	</h1>
+	<div style="margin: 1em; font-family: monospace;">
+		<span>あなたは</span>
+		<span style="font-size: 1.5em">n</span>
+		<span>人目の訪問者です。</span>
+	</div>
+	<marquee>無線研究部の部室の電気がついているかどうかを確認できます。</marquee>
+	<div style="font-family: monospace; border: solid 1px black; padding: 0.5em;">
+		現在稼動しておりません。
+	</div>
+	<div style="margin-top: 1em">無線研トップページはこちら</div>
+	<div style="height: 2em; overflow: hidden; margin: .5em 0;">
+		<span id="arrows">↓↓↓↓↓↓↓↓↓↓↓</span>	
+	</div>
+	<div><a href="..">musenken.net</a></div>
+</body>
+</html>

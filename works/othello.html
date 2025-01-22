@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ja">
+<!--<![endif]-->
+<head>
+<title>JA1YAD | Works | Othello</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/style.css">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+</head>
+<body>
+<!--<div class="container">-->
+  <header id="navtop"> <a href="../index.html" class="logo fleft"> <img src="../img/logo.png" alt=""> </a>
+    <nav class="fright">
+      <ul>
+        <li><a href="../index.html" class="navinactive">ホーム</a></li>
+        <li><a href="../about.html" class="navinactive">YADについて</a></li>
+        <li><a href="../works.html" class="navactive">作品</a></li>
+        <li><a href="../contest.html" class="navinactive">コンテスト結果</a></li>
+        <li><a href="../fresher.html" class="navinactive">新入生向け</a></li>
+        <li><a href="../contact.html" class="navinactive">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="work-page main grid-wrap container">
+    <header class="grid col-full">
+    </header>
+    <aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
+      <h3>Othello</h3>
+      <h6>About</h6>
+      <p class="mbottom">Othello Game and AI</p>
+      <h6>Developer</h6>
+      <p class="halfmbottom">B1, 1st Group</p>
+      <h6>Technology</h6>
+      <ul class="halfmbottom">
+        <li>C++</li>
+      </ul>
+      <h6>Links</h6>
+      <ul class="mbottom">
+      </ul>
+    </aside>
+    <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+      <figure class=""><img src="../img/works/othello.png" alt=""> </a>
+      <figcaption>
+          <p>Screen Shot</p>
+        </figcaption>
+	  <br>
+	  <h4>概要</h4>
+          <p>オセロで、手を入力するとコンピュータが手を返すプログラム。先手か後手か、またコンピューターが読む手の数を設定できる。また、わざと負けるような手を打つこともできる。</p>
+	  <h4>技術的な説明</h4>
+          <p>プログラミング言語はc++を使用している。AIは主に評価と探索に分かれる。</p>
+	  <h5>評価</h5>
+	  <p>ある盤面を、有利または不利と呼ばれている石の状態を探索することで評価する。このAIでは下記のような基準が使われている。</p>
+	  <ul>
+	    <li>・開放度 ある石の周りの空きマスの数。これが多いとのちにその石が返される可能性が高いために不利となる。</li>
+	    <li>・着手可能手数　自分が打てる手の数が多ければ、良い手が置くなり、悪い手を避けることができるので、有利となる。</li>
+	    <li>・確定石 絶対に返されることのない石のことで、これが多いほど有利となる。</li>
+	    <li>・辺の状態　オセロに置いて盤の一番外側の部分は重要であり、その部分で有利な形や不利な形がありそれを探索する。</li>
+	    <li>・X打ちやC打ち　隅の隣のマスに打つC打ちや隅のななめ内側のマスに打つX打ちは、隅を取られてしまう可能性が高くなり不利になるという理論。</li>
+	  </ul>
+	  <h5>探索</h5>
+          <p>あらゆる手を評価してその中から一番良い手を探索する方法としてこのAIは、序盤ではNegaMax法というものを使っている。この方法では、相手が一番良い手を打つはずだと考え、それに対して一番評価の高い盤面になるように手を打つようになっている。また、本格的に手を読む前に、あらかじめ浅い読みで手を評価して、その評価値が手から読むようにしている。このことで、良い手を早めに察知して、読む必要がない悪い手を読みから外しやすくなり、計算量を減らすことができる。終盤になると、考え得る手が少なくなっていき、より深く読むことができるため、最終局面までの全ての手を読むようになる。</p>
+      </figure>
+    </section>
+  </div>
+  <!--main-->
+  <footer class="grid-wrap">
+    <div class="up grid col-one-third "> <a href="#navtop" title="Go back up">Go To Top &uarr;</a> </div>
+    <nav class="grid col-full ">
+      <ul>
+        <li><a href="../index.html">ホーム</a></li>
+        <li><a href="../about.html">YADについて</a></li>
+        <li><a href="../works.html">作品</a></li>
+        <li><a href="../contest.html">コンテスト結果</a></li>
+        <li><a href="../fresher.html">新入生向け</a></li>
+        <li><a href="../contact.html">アクセス・お問い合わせ</a></li>
+      </ul>
+    <a href="../index.html"> <img src="../img/logo_without_letters.png" alt="" class="fleft"> </a>
+
+    <script>
+      var today = new Date();
+      document.write('<p class="copyright">&copy; ' + today.getFullYear() + ' JA1YAD. All rights reserved.</p>')
+    </script>
+
+    </nav>
+  </footer>
+<!--</div>-->
+<!-- Javascript - jQuery -->
+<script src="../js/jquery-1.7.2.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]><script src="js/selectivizr.js"></script><![endif]-->
+<script src="../js/scripts.js"></script>
+</body>
+</html>
